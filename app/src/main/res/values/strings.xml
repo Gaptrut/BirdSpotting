@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">Birds</string>
+    <string name="zoom_in">Zooma in</string>
+    <string name="zoom_out">Zooma ut</string>
+</resources>

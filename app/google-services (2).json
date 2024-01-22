@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "643924376789",
+    "project_id": "birds-ce6b1",
+    "storage_bucket": "birds-ce6b1.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:643924376789:android:579d7f59eaf2323b3ab65c",
+        "android_client_info": {
+          "package_name": "com.example.birds"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyD4NXkZFozoXglH6NoexmGt0Q6EeNV51F0"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
