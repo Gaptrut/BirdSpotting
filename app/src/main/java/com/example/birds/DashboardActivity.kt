@@ -23,6 +23,7 @@ class DashboardActivity : AppCompatActivity() {
         recyclerViewButton.setOnClickListener {
             val intent = Intent(this, BirdListActivity::class.java)
             startActivity(intent)
+
         }
 
 

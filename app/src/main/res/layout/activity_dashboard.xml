@@ -6,67 +6,164 @@
     android:layout_height="match_parent"
     tools:context=".DashboardActivity">
 
+
     <Button
         android:id="@+id/mapButton"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:backgroundTint="#F87C79"
+        android:layout_marginTop="76dp"
+        android:backgroundTint="#86B66D"
+        android:elevation="10dp"
         android:text="Karta"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.238"
+        app:layout_constraintEnd_toStartOf="@+id/recyclerViewButton"
+        app:layout_constraintHorizontal_bias="0.333"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.816" />
+        app:layout_constraintTop_toBottomOf="@+id/textView8" />
 
     <Button
         android:id="@+id/recyclerViewButton"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:backgroundTint="#F87C79"
+        android:layout_marginTop="76dp"
+        android:layout_marginEnd="64dp"
+        android:backgroundTint="#86B66D"
+        android:elevation="10dp"
         android:text="Lista"
-        app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.786"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/textView9"
-        app:layout_constraintVertical_bias="0.331" />
+        app:layout_constraintTop_toBottomOf="@+id/textView8" />
+
 
     <TextView
         android:id="@+id/textView8"
-        android:layout_width="366dp"
-        android:layout_height="31dp"
+        android:layout_width="367dp"
+        android:layout_height="86dp"
+        android:layout_marginBottom="176dp"
+        android:background="@drawable/rounded_corners"
+        android:backgroundTintMode="add"
+        android:elevation="5dp"
         android:fontFamily="monospace"
-        android:text="Välkommen till BirdSpotting 2024"
+        android:padding="10dp"
+        android:text="Medlemskap i BirdSpotting\nÄr du intresserad av vårt lokala kulturarv? Vill du hjälpa till att bevara kunskapen om det arvet? Då vill vi varmt välkomna dig som medlem i Brynge Kulturförening"
         android:textAlignment="center"
-        android:textSize="18sp"
+        android:textColor="#EFF1F3"
+        android:textSize="11sp"
         android:textStyle="bold"
-        app:layout_constraintBottom_toTopOf="@+id/mapButton"
+        app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.488"
+        app:layout_constraintHorizontal_bias="0.403"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <TextView
+        android:id="@+id/textView11"
+        android:layout_width="371dp"
+        android:layout_height="31dp"
+        android:layout_marginTop="25dp"
+        android:background="@drawable/rounded_corners"
+        android:backgroundTintMode="add"
+        android:elevation="5dp"
+        android:fontFamily="monospace"
+        android:padding="5dp"
+        android:text="BirdSpotting 2024"
+        android:textAlignment="center"
+        android:textColor="#F5F5F6"
+        android:textSize="17sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@+id/materialCardView3"
+        app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.084" />
+        app:layout_constraintVertical_bias="0.0" />
 
     <TextView
         android:id="@+id/textView9"
-        android:layout_width="385dp"
-        android:layout_height="103dp"
-        android:text="Här kan du dela dina fågelobservationer  med andra intresserade människor. Vem som helst kan skapa ett konto  och vara med och bidra. Här har vi samlat ett antal artiklar  och dokument som kan vara till hjälp  om man vill vara med och bidra till  fågelforskningen genom att rapportera  sina fågelobservationer till BirdSpotting"
+        android:layout_width="368dp"
+        android:layout_height="41dp"
+        android:layout_marginTop="16dp"
+        android:background="@drawable/rounded_corners"
+        android:backgroundTintMode="add"
+        android:elevation="5dp"
+        android:gravity="left"
+        android:padding="10dp"
+        android:text="Dela dina fågelobservationer med andra."
         android:textAlignment="center"
-        app:layout_constraintBottom_toBottomOf="parent"
+        android:textColor="#EFF2F4"
+        android:textSize="14sp"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.418"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/textView8"
-        app:layout_constraintVertical_bias="0.576" />
+        app:layout_constraintTop_toBottomOf="@+id/textView8" />
 
-    <ImageView
-        android:id="@+id/imageView2"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        app:layout_constraintBottom_toTopOf="@+id/textView9"
+    <TextView
+        android:id="@+id/textView10"
+        android:layout_width="177dp"
+        android:layout_height="159dp"
+        android:layout_marginEnd="20dp"
+        android:layout_marginBottom="12dp"
+        android:background="@drawable/rounded_corners"
+        android:backgroundTintMode="add"
+        android:elevation="5dp"
+        android:gravity="left"
+        android:padding="6dp"
+        android:text="Om man vill vara med och bidra till  fågelforskningen genom att rapportera  sina \nfågelobservationer till BirdSpotting. \nDu kan skapa ett konto och vara med och bidra. Här har vi samlat ett antal artiklar  och dokument som kan vara till hjälp. "
+        android:textColor="#F0F3F4"
+        android:textSize="12sp"
+        app:layout_constraintBottom_toTopOf="@+id/textView8"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+    <com.google.android.material.card.MaterialCardView
+        android:id="@+id/materialCardView2"
+        android:layout_width="168dp"
+        android:layout_height="157dp"
+        android:layout_marginBottom="12dp"
+        app:cardCornerRadius="10dp"
+        app:layout_constraintBottom_toTopOf="@+id/textView8"
+        app:layout_constraintEnd_toStartOf="@+id/textView10"
+        app:layout_constraintStart_toStartOf="parent">
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:src="@drawable/domherre" />
+    </com.google.android.material.card.MaterialCardView>
+
+
+    <com.google.android.material.card.MaterialCardView
+        android:id="@+id/materialCardView3"
+        android:layout_width="371dp"
+        android:layout_height="84dp"
+        android:layout_marginTop="11dp"
+        app:cardCornerRadius="10dp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/textView8"
-        app:srcCompat="@drawable/domherre" />
+        app:layout_constraintTop_toBottomOf="@+id/textView11">
+
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:src="@drawable/svanar" />
+    </com.google.android.material.card.MaterialCardView>
+
+    <TextView
+        android:id="@+id/textView12"
+        android:layout_width="368dp"
+        android:layout_height="109dp"
+        android:layout_marginTop="20dp"
+
+        android:background="@drawable/rounded_corners"
+        android:backgroundTintMode="add"
+        android:elevation="5dp"
+        android:gravity="left"
+        android:padding="10dp"
+        android:text="Välkommen till vår fågelapp där du kan följa vårfåglarna tillsammans med fågelintresserade runt om i landet."
+        android:textAlignment="center"
+        android:textColor="#F1ECEC"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@+id/textView10"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/materialCardView3"
+        app:layout_constraintVertical_bias="0.0" />
+
 </androidx.constraintlayout.widget.ConstraintLayout>

@@ -41,7 +41,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginBottom="172dp"
-        android:backgroundTint="#F87C79"
+        android:backgroundTint="#86B66D"
         android:fontFamily="monospace"
         android:text="Spara!"
         android:textSize="12sp"
